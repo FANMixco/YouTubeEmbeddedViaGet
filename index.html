@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/video.css" />
     <script src="js/video.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="img/icon-192x192.png" sizes="96x96">
+
 </head>
 <body>
 	<div id="videoContainer">
 		<iframe id="youtube" src="#" frameborder="0" allowfullscreen></iframe>
 	</div>
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+     </script>
 </body>
 </html>
